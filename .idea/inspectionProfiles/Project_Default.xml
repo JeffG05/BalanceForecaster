@@ -1,0 +1,45 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CheckEmptyScriptTag" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="12">
+            <item index="0" class="java.lang.String" itemvalue="style:background-color" />
+            <item index="1" class="java.lang.String" itemvalue="style:color" />
+            <item index="2" class="java.lang.String" itemvalue="style:mask-image" />
+            <item index="3" class="java.lang.String" itemvalue="style:height" />
+            <item index="4" class="java.lang.String" itemvalue="style:width" />
+            <item index="5" class="java.lang.String" itemvalue="style:-webkit-mask-image" />
+            <item index="6" class="java.lang.String" itemvalue="style:font-size" />
+            <item index="7" class="java.lang.String" itemvalue="style:border" />
+            <item index="8" class="java.lang.String" itemvalue="style:flex" />
+            <item index="9" class="java.lang.String" itemvalue="style:visibility:" />
+            <item index="10" class="java.lang.String" itemvalue="style:align-items" />
+            <item index="11" class="java.lang.String" itemvalue="graph" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="8">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="topbar" />
+            <item index="7" class="java.lang.String" itemvalue="vis-single-container" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
