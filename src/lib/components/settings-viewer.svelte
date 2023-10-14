@@ -4,6 +4,7 @@
 	import PickerItem from '$lib/components/picker-item.svelte';
 	import InputPicker from '$lib/components/input-picker.svelte';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import type { BasicDetails } from '$lib/scripts/types';
 	import { Account } from '$lib/scripts/account.js';
 
@@ -15,7 +16,7 @@
 	function clearData() {
 		if (confirm('Are you sure you want to delete all your data? This action cannot be undone.')) {
 			localStorage.removeItem('basicDetails');
-			goto('/');
+			goto(`${base}/`);
 		}
 	}
 
@@ -59,7 +60,7 @@
 			account.importCsv(contents);
 			jsonData.account = account.toObject();
 			localStorage.setItem('basicDetails', JSON.stringify(jsonData));
-			goto('/');
+			goto(`${base}/`);
 		} catch {
 			alert('Unable to import your data. Please try again.');
 		}

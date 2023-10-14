@@ -9,6 +9,7 @@
 	import { TransferTimespan } from '$lib/scripts/transfer-timespan';
 	import { BookingSchedule } from '$lib/scripts/booking-schedule';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	let nameDialogShowing = false;
 	let newName = '';
@@ -28,7 +29,7 @@
 	}
 
 	function goToSettings() {
-		goto('/settings');
+		goto(`${base}/settings`);
 	}
 
 	function createNewTransfer(name: string) {

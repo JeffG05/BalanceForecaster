@@ -4,6 +4,7 @@
 	import PickerItem from '$lib/components/picker-item.svelte';
 	import InputPicker from '$lib/components/input-picker.svelte';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import type { BasicDetails } from '$lib/scripts/types';
 	import { DateTime } from 'luxon';
 	import { Account } from '$lib/scripts/account';
@@ -23,7 +24,7 @@
 			account: new Account(name, balance).toObject()
 		};
 		localStorage.setItem('basicDetails', JSON.stringify(json));
-		goto('/');
+		goto(`${base}/`);
 	}
 </script>
 

@@ -1,9 +1,11 @@
 <script lang="ts">
 	import '@fontsource/barlow';
 	import TitlebarBtn from '$lib/components/titlebar-btn.svelte';
+	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	function goBack() {
-		window.location.assign('/');
+		goto(`${base}/`);
 	}
 </script>
 

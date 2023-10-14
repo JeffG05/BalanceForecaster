@@ -4,6 +4,7 @@
 	import type { PageData } from './$types';
 	import type { BasicDetails } from '$lib/scripts/types';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	export let data: PageData;
 
@@ -30,7 +31,7 @@
 		if (accountName.trim().length == 0) {
 			save(originalName, startingBalance);
 		}
-		goto('/');
+		goto(`${base}/`);
 	}
 
 	$: save(accountName, startingBalance);

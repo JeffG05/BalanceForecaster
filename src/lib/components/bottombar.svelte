@@ -5,6 +5,7 @@
 	import TitlebarBtn from '$lib/components/titlebar-btn.svelte';
 	import { DateTime } from 'luxon';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	export let reportStartDate: DateTime;
 	export let reportEndDate: DateTime;
@@ -12,7 +13,7 @@
 
 	function buildReport() {
 		save();
-		goto('/report');
+		goto(`${base}/report`);
 	}
 </script>
 
