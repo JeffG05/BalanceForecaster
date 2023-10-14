@@ -17,11 +17,12 @@ import { currencyFormat } from '$lib/scripts/utils';
 import type { FlowGraphDataRecord } from '$lib/scripts/types';
 import type { StatementLines } from '$lib/scripts/statement-line';
 import { redirect } from '@sveltejs/kit';
+import { base } from '$app/paths';
 
 export const load: PageLoad = (): PageData => {
 	const details = localStorage.getItem('basicDetails');
 	if (!details) {
-		throw redirect(300, '/setup');
+		throw redirect(300, `${base}/setup`);
 	}
 
 	const basicJson: BasicDetails = JSON.parse(details);
