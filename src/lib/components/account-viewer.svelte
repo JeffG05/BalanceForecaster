@@ -302,7 +302,11 @@
 					</PickerSection>
 					<PickerSection title="Booking schedule">
 						<PickerItem title="Start date">
-							<DatePicker bind:date={startDate} max={endDate} />
+							{#if selected.isOneOff || bookingStatus === 'Ongoing'}
+								<DatePicker bind:date={startDate} />
+							{:else}
+								<DatePicker bind:date={startDate} max={endDate} />
+							{/if}
 						</PickerItem>
 						{#if timespan !== 'One-off'}
 							<PickerItem title="Status">
